@@ -1,0 +1,39 @@
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: block;
+  text-align: center;
+}
+
+ul.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-list li {
+  width: 100%;
+}
+
+@media (min-width: $break-tablet-sm) {
+  .row {
+    display: flex;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .product-list li {
+    width: 50%;
+  }
+}
