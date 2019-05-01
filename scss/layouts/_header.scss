@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul, nav:active ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  right: 20px;
+  top: 20px;
+  list-style-type: none;
+}
+
+@media (min-width: $break-tablet-lg) {
+#hamburger {
+  display: none;
+}
+
+nav ul {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+}
